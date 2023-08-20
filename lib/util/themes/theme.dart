@@ -7,7 +7,9 @@ class AppTheme {
   static ThemeData customTheme = ThemeData(
     primaryColor: colorCustom,
     primarySwatch: colorCustom,
+    // iconTheme:IconThemeData(color: colorCustom) ,
     textTheme: TextTheme(
+
       displayMedium: GoogleFonts.openSans(
         fontWeight: FontWeight.bold,
         color: const Color.fromRGBO(76, 175, 199, 1.0),

@@ -1,10 +1,13 @@
-2023/08/20-20:13:50.336 434 Log #3: 9 ops saved to Table #7 OK
-2023/08/20-20:13:50.395 434 Archiving C:\Users\HAMZAN~1\AppData\Local\Temp\flutter_tools.2c660da7\flutter_tools_chrome_device.6f30575c\Default\Site Characteristics Database/000003.log: OK
-2023/08/20-20:13:50.620 434 Log #6: 10 ops saved to Table #8 OK
-2023/08/20-20:13:50.628 434 Archiving C:\Users\HAMZAN~1\AppData\Local\Temp\flutter_tools.2c660da7\flutter_tools_chrome_device.6f30575c\Default\Site Characteristics Database/000006.log: OK
-2023/08/20-20:13:50.629 434 Table #4: 9 entries OK
-2023/08/20-20:13:50.629 434 Table #6: 9 entries OK
-2023/08/20-20:13:50.630 434 Table #7: 9 entries OK
-2023/08/20-20:13:50.630 434 Table #8: 10 entries OK
-2023/08/20-20:13:50.772 434 Archiving C:\Users\HAMZAN~1\AppData\Local\Temp\flutter_tools.2c660da7\flutter_tools_chrome_device.6f30575c\Default\Site Characteristics Database/MANIFEST-000001: OK
-2023/08/20-20:13:51.333 434 **** Repaired leveldb C:\Users\HAMZAN~1\AppData\Local\Temp\flutter_tools.2c660da7\flutter_tools_chrome_device.6f30575c\Default\Site Characteristics Database; recovered 4 files; 1415 bytes. Some data may have been lost. ****
+2023/08/20-21:26:24.131 2ba0 Reusing MANIFEST C:\Users\HAMZAN~1\AppData\Local\Temp\flutter_tools.2e20ab58\flutter_tools_chrome_device.b0a39ce7\Default\Site Characteristics Database/MANIFEST-000001
+2023/08/20-21:26:24.134 2ba0 Recovering log #3
+2023/08/20-21:26:24.134 2ba0 Level-0 table #13: started
+2023/08/20-21:26:24.409 2ba0 Level-0 table #13: 378 bytes OK
+2023/08/20-21:26:24.409 2ba0 Recovering log #6
+2023/08/20-21:26:24.409 2ba0 Level-0 table #14: started
+2023/08/20-21:26:24.551 2ba0 Level-0 table #14: 281 bytes OK
+2023/08/20-21:26:24.552 2ba0 Recovering log #10
+2023/08/20-21:26:24.552 2ba0 Reusing old log C:\Users\HAMZAN~1\AppData\Local\Temp\flutter_tools.2e20ab58\flutter_tools_chrome_device.b0a39ce7\Default\Site Characteristics Database/000010.log 
+2023/08/20-21:26:24.633 2ba0 Delete type=0 #3
+2023/08/20-21:26:24.633 2ba0 Delete type=2 #4
+2023/08/20-21:26:24.633 2ba0 Delete type=2 #6
+2023/08/20-21:26:24.633 2ba0 Delete type=0 #6

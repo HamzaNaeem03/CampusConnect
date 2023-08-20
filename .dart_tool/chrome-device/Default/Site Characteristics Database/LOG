@@ -1,9 +1,7 @@
-2023/08/20-20:13:51.351 434 Reusing MANIFEST C:\Users\HAMZAN~1\AppData\Local\Temp\flutter_tools.2c660da7\flutter_tools_chrome_device.6f30575c\Default\Site Characteristics Database/MANIFEST-000001
-2023/08/20-20:13:51.354 3688 Compacting 4@0 + 0@1 files
-2023/08/20-20:13:51.610 3688 Generated table #11@0: 2 keys, 197 bytes
-2023/08/20-20:13:51.610 3688 Compacted 4@0 + 0@1 files => 197 bytes
-2023/08/20-20:13:51.929 3688 compacted to: files[ 0 1 0 0 0 0 0 ]
-2023/08/20-20:13:51.931 3688 Delete type=2 #4
-2023/08/20-20:13:51.931 3688 Delete type=2 #6
-2023/08/20-20:13:51.932 3688 Delete type=2 #7
-2023/08/20-20:13:51.933 3688 Delete type=2 #8
+2023/08/20-22:15:12.465 3f04 Reusing MANIFEST C:\Users\HAMZAN~1\AppData\Local\Temp\flutter_tools.71b8d0cb\flutter_tools_chrome_device.46fd943\Default\Site Characteristics Database/MANIFEST-000001
+2023/08/20-22:15:12.467 3f04 Recovering log #10
+2023/08/20-22:15:12.468 3f04 Reusing old log C:\Users\HAMZAN~1\AppData\Local\Temp\flutter_tools.71b8d0cb\flutter_tools_chrome_device.46fd943\Default\Site Characteristics Database/000010.log 
+2023/08/20-22:15:12.469 3f04 Delete type=0 #3
+2023/08/20-22:15:12.469 3f04 Delete type=2 #4
+2023/08/20-22:15:12.469 3f04 Delete type=2 #6
+2023/08/20-22:15:12.469 3f04 Delete type=0 #6
