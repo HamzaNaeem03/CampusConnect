@@ -16,7 +16,23 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Profile'),
+      iconTheme: IconThemeData(color: Colors.white),
+      title: Center(
+          child: Text(
+        "Profile",
+        style: const TextStyle(
+            fontSize: 20, color: Colors.white, letterSpacing: 0.4),
+      )),
+      actions: <Widget>[
+        IconButton(
+          icon: Icon(
+            Icons.notifications_sharp,
+          ),
+          onPressed: () {
+            // do something
+          },
+        )
+      ],
       ),
       // Use your custom MyAppbar widget here
       drawer: MyDrawer(
@@ -24,49 +40,62 @@ class _ProfileScreenState extends State<ProfileScreen> {
         accountEmail: 'hamza04032003',
       ),
       bottomNavigationBar: BottomNavBar(),
-      body: Column(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            // Student Profile
+            Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children:  [
+                  SizedBox(
+                    height: 140,
+                    width: 140,
+                    child: CircleAvatar(
+                      radius: 50,
+                      backgroundImage: AssetImage('assets/images/avator2.png'),
+                    ),
+                  ),
+                  SizedBox(height: 50),
+                  
+                                        Text('kumail Abbass', style: Theme.of(context).textTheme.titleMedium,),
+      Row(
         children: [
-          // Student Profile
-          Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: const [
-                CircleAvatar(
-                  radius: 50,
-                  backgroundImage: AssetImage('assets/images/avator2.png'),
-                ),
-                SizedBox(height: 10),
-                Text('Student Name: Syed Kumail Abbas'),
-                Text('Roll Number: 909f'),
-                Text('Section: A'),
-                Text('Batch: 2023'),
-                Text('Semester: 2'),
-                Text('Email: kumailabbass****@gmail.com'),
-                Text('Phone: 92+********3'),
-                Text('Address: 123 Main St, Karachi'),
-                SizedBox(height: 20),
-              ],
-            ),
-          ),
-
-          // HOD Profile
-          Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: const [
-                CircleAvatar(
-                  radius: 30,
-                  backgroundImage: AssetImage('assets/images/avator1.png'),
-                ),
-                SizedBox(height: 10),
-                Text('HOD Name: Mercedes Roa'),
-                Text('Email: hod@gmail.com'),
-              ],
-            ),
-          ),
+          Text("Class:" , style: Theme.of(context).textTheme.titleMedium,),
         ],
+      ),
+                  
+                  Text('Roll Number: 909f'),
+                  Text('Section: A'),
+                  Text('Batch: 2023'),
+                  Text('Semester: 2'),
+                  Text('Email: kumailabbass****@gmail.com'),
+                  Text('Phone: 92+********3'),
+                  Text('Address: 123 Main St, Karachi'),
+                  SizedBox(height: 20),
+                ],
+              ),
+            ),
+      
+            // HOD Profile
+            Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: const [
+                  CircleAvatar(
+                    radius: 30,
+                    backgroundImage: AssetImage('assets/images/avator1.png'),
+                  ),
+                  SizedBox(height: 10),
+                  Text('HOD Name: Mercedes Roa'),
+                  Text('Email: hod@gmail.com'),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
