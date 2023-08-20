@@ -45,7 +45,7 @@ class _TimeTableState extends State<TimeTable> {
 body: Column(
   children: [
     Text("Days", style: Theme.of(context).textTheme.titleMedium,),
-   
+   Text("monday")
   ],
 ),
     );
