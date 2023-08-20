@@ -9,20 +9,23 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 28, horizontal: 40),
+        padding:  EdgeInsets.symmetric(vertical: 28, horizontal: 40),
         child: Form(
           key: _formkey,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              SizedBox(
+                child: Image.asset('lib/assets/images/campusconnectLOGO.png'),
+              ),
               TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   filled: false,
                   fillColor: Colors.white,
                   labelText: "Username",
                   hintText: "Enter username",
-                  hintStyle: const TextStyle(color: Colors.grey),
+                  hintStyle: TextStyle(color: Colors.grey),
                 ),
                 validator: (value) {
                   if (value!.isEmpty) {
@@ -31,17 +34,17 @@ class LoginScreen extends StatelessWidget {
                   return null;
                 },
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               TextFormField(
                 obscureText: true,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   filled: false,
                   fillColor: Colors.white,
                   labelText: "Password",
                   hintText: "Enter password",
-                  hintStyle: const TextStyle(color: Colors.grey),
+                  hintStyle: TextStyle(color: Colors.grey),
                 ),
                 validator: (value) {
                   if (value!.isEmpty) {
@@ -52,13 +55,13 @@ class LoginScreen extends StatelessWidget {
                   return null;
                 },
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               ElevatedButton(
                   style: ElevatedButton.styleFrom(primary: colorCustom),
                   child:
-                      Text("continue", style: TextStyle(color: Colors.white)),
+                      const Text("continue", style: TextStyle(color: Colors.white)),
                   onPressed: () {
                     if (_formkey.currentState!.validate()) {
                       Navigator.pushNamed(context, "/Profile");

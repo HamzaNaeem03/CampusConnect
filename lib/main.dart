@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         theme: AppTheme.customTheme,
         title: 'CampusConnect',
-        home: ProfileScreen(),
-        // initialRoute: "/Splash",
+        // home: const ProfileScreen(),
+        initialRoute: "/Splash",
         routes: {
           // "/": (context) => const login(),
           "/Splash": (context) => const SplashScreen(),

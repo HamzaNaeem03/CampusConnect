@@ -17,16 +17,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.white),
-        title: Center(
+        iconTheme: const IconThemeData(color: Colors.white),
+        title: const Center(
             child: Text(
           "Profile",
-          style: const TextStyle(
+          style: TextStyle(
               fontSize: 20, color: Colors.white, letterSpacing: 0.4),
         )),
         actions: <Widget>[
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.notifications_sharp,
             ),
             onPressed: () {
@@ -36,11 +36,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ],
       ),
       // Use your custom MyAppbar widget here
-      drawer: MyDrawer(
+      drawer: const MyDrawer(
         accountName: 'hamza',
         accountEmail: 'hamza04032003',
       ),
-      bottomNavigationBar: BottomNavBar(),
+      bottomNavigationBar: const BottomNavBar(),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -50,15 +50,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 140,
                     width: 140,
                     child: CircleAvatar(
                       radius: 50,
-                      backgroundImage: AssetImage('assets/images/avator2.png'),
+                      backgroundImage: AssetImage('lib/assets/images/avator2.png'),
                     ),
                   ),
-                  SizedBox(height: 50),
+                  const SizedBox(height: 50),
                   Text(
                     'kumail Abbass',
                     style: GoogleFonts.figtree(
@@ -67,7 +67,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       color: const Color.fromRGBO(23, 63, 88, 1.0),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
                   Text(
@@ -78,7 +78,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       color: const Color.fromRGBO(23, 63, 88, 1.0),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   SizedBox(
@@ -119,7 +119,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         SizedBox(
@@ -130,7 +130,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               children: [
                                 Row(
                                   children: [
-                                    Icon(
+                                    const Icon(
                                       Icons.email,
                                       color: Colors.blueAccent,
                                     ),
@@ -144,7 +144,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 ),
                                 Row(
                                   children: [
-                                    Icon(
+                                    const Icon(
                                       Icons.phone,
                                       color: Colors.orange,
                                     ),
@@ -158,7 +158,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 ),
                                 Row(
                                   children: [
-                                    Icon(
+                                    const Icon(
                                       Icons.location_on,
                                       color: Colors.red,
                                     ),
@@ -177,7 +177,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                 ],
               ),
 
@@ -189,18 +189,18 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       "Teacher's Details",
                       style: Theme.of(context).textTheme.titleLarge,
                     ),
-                                        SizedBox(height: 5,),
+                                        const SizedBox(height: 5,),
 
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        CircleAvatar(
+                        const CircleAvatar(
                           radius: 30,
                           backgroundImage:
-                              AssetImage('assets/images/avator1.png'),
+                              AssetImage('lib/assets/images/avator1.png'),
                         ),
-                        SizedBox(width: 10),
+                        const SizedBox(width: 10),
                         Column(
                           children: [
                             Text(
@@ -209,7 +209,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             ),
                             Row(
                               children: [
-                                Icon(
+                                const Icon(
                                       Icons.phone,
                                       color: Colors.orange,size: 20,
                                     ),
@@ -223,7 +223,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             ),
                             Row(
                               children: [
-                                Icon(
+                                const Icon(
                                   Icons.email,
                                   color: Colors.blueAccent,
                                   size: 20,
@@ -241,7 +241,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ],
                 ),
               ),
-SizedBox(height: 50,),
+const SizedBox(height: 50,),
               //mother profile
               Card(
                 child: Column(
@@ -250,17 +250,17 @@ SizedBox(height: 50,),
                       "Mother's Details",
                       style: Theme.of(context).textTheme.titleLarge,
                     ),
-                    SizedBox(height: 5,),
+                    const SizedBox(height: 5,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        CircleAvatar(
+                        const CircleAvatar(
                           radius: 30,
                           backgroundImage:
-                              AssetImage('assets/images/avator1.png'),
+                              AssetImage('lib/assets/images/avator1.png'),
                         ),
-                        SizedBox(width: 10),
+                        const SizedBox(width: 10),
                         Column(
                           children: [
                             Text(
@@ -269,7 +269,7 @@ SizedBox(height: 50,),
                             ),
                             Row(
                               children: [
-                                Icon(
+                                const Icon(
                                       Icons.phone,
                                       color: Colors.orange,size: 20,
                                     ),
@@ -283,7 +283,7 @@ SizedBox(height: 50,),
                             ),
                             Row(
                               children: [
-                                Icon(
+                                const Icon(
                                   Icons.email,
                                   color: Colors.blueAccent,
                                   size: 20,
