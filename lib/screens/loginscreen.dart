@@ -35,22 +35,23 @@ class LoginScreen extends StatelessWidget {
                 height: 40,
               ),
               TextFormField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    filled: false,
-                    fillColor: Colors.white,
-                    labelText: "Password",
-                    hintText: "Enter password",
-                    hintStyle: const TextStyle(color: Colors.grey),
-                  ),validator: (value) {
+                obscureText: true,
+                decoration: InputDecoration(
+                  filled: false,
+                  fillColor: Colors.white,
+                  labelText: "Password",
+                  hintText: "Enter password",
+                  hintStyle: const TextStyle(color: Colors.grey),
+                ),
+                validator: (value) {
                   if (value!.isEmpty) {
                     return "Password cannot be empty";
-                  }
-                  else if(value.length<6) {
+                  } else if (value.length < 6) {
                     return "minimum password length should be 6 characters";
                   }
                   return null;
-                },),
+                },
+              ),
               SizedBox(
                 height: 50,
               ),

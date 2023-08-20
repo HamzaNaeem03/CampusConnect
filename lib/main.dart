@@ -17,22 +17,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: AppTheme.customTheme,
-      title: 'CampusConnect',
-       home: ProfileScreen(),
-      // initialRoute: "/Splash",
-routes: {
-        // "/": (context) => const login(),
-                "/Splash": (context) => const SplashScreen(),
+        theme: AppTheme.customTheme,
+        title: 'CampusConnect',
+        home: ProfileScreen(),
+        // initialRoute: "/Splash",
+        routes: {
+          // "/": (context) => const login(),
+          "/Splash": (context) => const SplashScreen(),
 
-        "/Login": (context) =>  LoginScreen(),
-        "/Profile": (context) => const ProfileScreen(),
-                "/TimeTable": (context) => const TimeTable(),
-                                "/Assignments": (context) => const Assignments(),
-                               "/Attendance" : (context) => const Attendance(),
-
-
-}     
-    );
+          "/Login": (context) => LoginScreen(),
+          "/Profile": (context) => const ProfileScreen(),
+          "/TimeTable": (context) => const TimeTable(),
+          "/Assignments": (context) => const Assignments(),
+          "/Attendance": (context) => const Attendance(),
+        });
   }
 }
