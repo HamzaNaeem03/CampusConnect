@@ -15,8 +15,9 @@ class AppTheme {
         color: const Color.fromRGBO(76, 175, 199, 1.0),
       ),
       displaySmall: GoogleFonts.openSans(
+        fontSize: 22,
         fontWeight: FontWeight.bold,
-        color: const Color.fromRGBO(76, 175, 199, 1.0),
+        color: const Color.fromRGBO(23, 63, 88, 1.0),
       ),
       titleLarge: GoogleFonts.openSans(
         fontWeight: FontWeight.bold,

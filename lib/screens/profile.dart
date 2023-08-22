@@ -46,87 +46,171 @@ class _ProfileScreenState extends State<ProfileScreen> {
           child: Column(
             children: [
               // Student Profile
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  const SizedBox(
-                    height: 140,
-                    width: 140,
-                    child: CircleAvatar(
-                      radius: 50,
-                      backgroundImage: AssetImage('lib/assets/images/avator2.png'),
-                    ),
-                  ),
-                  const SizedBox(height: 50),
-                  Text(
-                    'kumail Abbass',
-                    style: GoogleFonts.figtree(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                      color: const Color.fromRGBO(23, 63, 88, 1.0),
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 5,
-                  ),
-                  Text(
-                    'Roll  Number: 909f ',
-                    style: GoogleFonts.figtree(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 16,
-                      color: const Color.fromRGBO(23, 63, 88, 1.0),
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  SizedBox(
-                    width: double.infinity * 0.3,
-                    child: Column(
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Row(
-                              children: [
-                                Text(
-                                  "Class: ",
-                                  style:
-                                      Theme.of(context).textTheme.titleMedium,
-                                ),
-                                Text(
-                                  "1",
-                                  style:
-                                      Theme.of(context).textTheme.titleMedium,
-                                ),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Text(
-                                  "Section: ",
-                                  style:
-                                      Theme.of(context).textTheme.titleMedium,
-                                ),
-                                Text(
-                                  "A",
-                                  style:
-                                      Theme.of(context).textTheme.titleMedium,
-                                ),
-                              ],
-                            ),
-                          ],
+              // Container(
+              //   padding: EdgeInsets.all(8),
+              //   child: Column(
+              //     mainAxisAlignment: MainAxisAlignment.center,
+              //     crossAxisAlignment: CrossAxisAlignment.center,
+              //     children: [
+              //        SizedBox(
+              //         height: 140,
+              //         width: 140,
+              //         child: CircleAvatar(
+              //           radius: 50,
+              //           backgroundImage: AssetImage('lib/assets/images/avator2.png'),
+              //         ),
+              //       ),
+              //       const SizedBox(height: 50),
+              //       Text(
+              //         'kumail Abbass',
+              //         style: GoogleFonts.figtree(
+              //           fontWeight: FontWeight.bold,
+              //           fontSize: 20,
+              //           color: const Color.fromRGBO(23, 63, 88, 1.0),
+              //         ),
+              //       ),
+              //       const SizedBox(
+              //         height: 5,
+              //       ),
+              //       Text(
+              //         'Roll  Number: 909f ',
+              //         style: GoogleFonts.figtree(
+              //           fontWeight: FontWeight.bold,
+              //           fontSize: 16,
+              //           color: const Color.fromRGBO(23, 63, 88, 1.0),
+              //         ),
+              //       ),
+              //       const SizedBox(
+              //         height: 20,
+              //       ),
+              //       SizedBox(
+              //         width: double.infinity * 0.3,
+              //         child: Column(
+              //           children: [
+              //             Row(
+              //               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              //               crossAxisAlignment: CrossAxisAlignment.center,
+              //               children: [
+              //                 Row(
+              //                   children: [
+              //                     Text(
+              //                       "Class: ",
+              //                       style:
+              //                           Theme.of(context).textTheme.titleMedium,
+              //                     ),
+              //                     Text(
+              //                       "1",
+              //                       style:
+              //                           Theme.of(context).textTheme.titleMedium,
+              //                     ),
+              //                   ],
+              //                 ),
+              //                 Row(
+              //                   children: [
+              //                     Text(
+              //                       "Section: ",
+              //                       style:
+              //                           Theme.of(context).textTheme.titleMedium,
+              //                     ),
+              //                     Text(
+              //                       "A",
+              //                       style:
+              //                           Theme.of(context).textTheme.titleMedium,
+              //                     ),
+              //                   ],
+              //                 ),
+              //               ],
+                          // ),
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          Container(
+padding: EdgeInsets.all(16),
+margin: EdgeInsets.all(20),
+                    // height: MediaQuery.of(context).size.height * 0.5,
+                    // width: MediaQuery.of(context).size.width * 0.5,
+                    child: Card(
+                      elevation: 5,
+                        color: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
                         ),
-                        const SizedBox(
-                          height: 20,
-                        ),
-                        SizedBox(
-                          width: double.infinity * 0.3,
-                          child: Card(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
+                  child: Column(
+                    children: [ SizedBox(
+                      height: 140,
+                      width: 140,
+                      child: CircleAvatar(
+                        radius: 50,
+                        backgroundImage: AssetImage('lib/assets/images/avator2.png'),
+                      ),
+                    ),
+                    const SizedBox(height: 50),
+                    Text(
+                      'kumail Abbass',
+                      style: GoogleFonts.figtree(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        color: const Color.fromRGBO(23, 63, 88, 1.0),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      'Roll  Number: 909f ',
+                      style: GoogleFonts.figtree(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                        color: const Color.fromRGBO(23, 63, 88, 1.0),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    SizedBox(
+                      width: double.infinity * 0.3,
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Row(
+                                children: [
+                                  Text(
+                                    "Class: ",
+                                    style:
+                                        Theme.of(context).textTheme.titleMedium,
+                                  ),
+                                  Text(
+                                    "1",
+                                    style:
+                                        Theme.of(context).textTheme.titleMedium,
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    "Section: ",
+                                    style:
+                                        Theme.of(context).textTheme.titleMedium,
+                                  ),
+                                  Text(
+                                    "A",
+                                    style:
+                                        Theme.of(context).textTheme.titleMedium,
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 5,),
+                Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Row(
                                   children: [
@@ -170,141 +254,135 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                     )
                                   ],
                                 ),
-                              ],
-                            ),
+                              ],)
+                
+                ]
+                  ),)),
+                // teacher's Profile
+                Card(
+                  child: Column(
+                    children: [
+                      Text(
+                        "Teacher's Details",
+                        style: Theme.of(context).textTheme.titleLarge,
+                      ),
+                                          const SizedBox(height: 5,),
+              
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          const CircleAvatar(
+                            radius: 30,
+                            backgroundImage:
+                                AssetImage('lib/assets/images/avator1.png'),
                           ),
-                        )
-                      ],
-                    ),
+                          const SizedBox(width: 10),
+                          Column(
+                            children: [
+                              Text(
+                                'Mercedes Roa',
+                                style: Theme.of(context).textTheme.titleMedium,
+                              ),
+                              Row(
+                                children: [
+                                  const Icon(
+                                        Icons.phone,
+                                        color: Colors.orange,size: 20,
+                                      ),
+                                      Text(
+                                        "92+********3",
+                                        style: Theme.of(context)
+                                            .textTheme
+                                            .titleSmall,
+                                      )
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  const Icon(
+                                    Icons.email,
+                                    color: Colors.blueAccent,
+                                    size: 20,
+                                  ),
+                                  Text(
+                                    'teachersmail@cc.com',
+                                    style: Theme.of(context).textTheme.titleSmall,
+                                  ),
+                                ],
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ],
                   ),
-                  const SizedBox(height: 20),
-                ],
-              ),
-
-              // teacher's Profile
-              Card(
-                child: Column(
-                  children: [
-                    Text(
-                      "Teacher's Details",
-                      style: Theme.of(context).textTheme.titleLarge,
-                    ),
-                                        const SizedBox(height: 5,),
-
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        const CircleAvatar(
-                          radius: 30,
-                          backgroundImage:
-                              AssetImage('lib/assets/images/avator1.png'),
-                        ),
-                        const SizedBox(width: 10),
-                        Column(
-                          children: [
-                            Text(
-                              'Mercedes Roa',
-                              style: Theme.of(context).textTheme.titleMedium,
-                            ),
-                            Row(
-                              children: [
-                                const Icon(
-                                      Icons.phone,
-                                      color: Colors.orange,size: 20,
-                                    ),
-                                    Text(
-                                      "92+********3",
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .titleSmall,
-                                    )
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                const Icon(
-                                  Icons.email,
-                                  color: Colors.blueAccent,
-                                  size: 20,
-                                ),
-                                Text(
-                                  'teachersmail@cc.com',
-                                  style: Theme.of(context).textTheme.titleSmall,
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ],
                 ),
-              ),
-const SizedBox(height: 50,),
-              //mother profile
-              Card(
-                child: Column(
-                  children: [
-                    Text(
-                      "Mother's Details",
-                      style: Theme.of(context).textTheme.titleLarge,
-                    ),
-                    const SizedBox(height: 5,),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        const CircleAvatar(
-                          radius: 30,
-                          backgroundImage:
-                              AssetImage('lib/assets/images/avator1.png'),
-                        ),
-                        const SizedBox(width: 10),
-                        Column(
-                          children: [
-                            Text(
-                              ' . ',
-                              style: Theme.of(context).textTheme.titleMedium,
-                            ),
-                            Row(
-                              children: [
-                                const Icon(
-                                      Icons.phone,
-                                      color: Colors.orange,size: 20,
-                                    ),
-                                    Text(
-                                      "92+********3",
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .titleSmall,
-                                    )
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                const Icon(
-                                  Icons.email,
-                                  color: Colors.blueAccent,
-                                  size: 20,
-                                ),
-                                Text(
-                                  'mothermail@gamil.com',
-                                  style: Theme.of(context).textTheme.titleSmall,
-                                ),
-                              ],
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ],
+              const SizedBox(height: 50,),
+                //mother profile
+                Card(
+                  child: Column(
+                    children: [
+                      Text(
+                        "Mother's Details",
+                        style: Theme.of(context).textTheme.titleLarge,
+                      ),
+                      const SizedBox(height: 5,),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          const CircleAvatar(
+                            radius: 30,
+                            backgroundImage:
+                                AssetImage('lib/assets/images/avator1.png'),
+                          ),
+                          const SizedBox(width: 10),
+                          Column(
+                            children: [
+                              Text(
+                                ' . ',
+                                style: Theme.of(context).textTheme.titleMedium,
+                              ),
+                              Row(
+                                children: [
+                                  const Icon(
+                                        Icons.phone,
+                                        color: Colors.orange,size: 20,
+                                      ),
+                                      Text(
+                                        "92+********3",
+                                        style: Theme.of(context)
+                                            .textTheme
+                                            .titleSmall,
+                                      )
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  const Icon(
+                                    Icons.email,
+                                    color: Colors.blueAccent,
+                                    size: 20,
+                                  ),
+                                  Text(
+                                    'mothermail@gamil.com',
+                                    style: Theme.of(context).textTheme.titleSmall,
+                                  ),
+                                ],
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
+                          ],
+                        ),
+                      ),
+                ),
+              )
+    ;
   }
 }

@@ -37,6 +37,9 @@ class MyDrawer extends StatelessWidget {
                 style: Theme.of(context).textTheme.titleMedium,
               ),
             ),
+             onTap: (){
+              Navigator.pushNamed(context, "/Profile");
+            },
           ),
           ListTile(
             leading: Icon(Icons.assignment_sharp, color: colorCustom),
