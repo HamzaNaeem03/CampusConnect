@@ -28,7 +28,8 @@ class _AssignmentsState extends State<Assignments> {
               Icons.notifications_sharp,
             ),
             onPressed: () {
-              // do something
+              Navigator.pushNamed(context, "/notifications");
+
             },
           )
         ],
@@ -38,6 +39,66 @@ class _AssignmentsState extends State<Assignments> {
         accountEmail: 'hamza04032003',
       ),
       bottomNavigationBar: BottomNavBar(),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              _buildAssignmentCard(Image.asset('lib/assets/icons/computer.png'),"Computer",
+                  "20-Aug", "submit lab file along with the final assignment")
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildAssignmentCard(
+    Image icon,
+    String subject,
+    String deadlinedate,
+    String details,
+  ) {
+    return Card(
+      elevation: 4,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: ListTile(
+        leading: (icon),
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              subject,
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
+            SizedBox(height: 4,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                
+                Text("Due On :"),
+                Text(
+                  deadlinedate,
+                  style: Theme.of(context).textTheme.titleSmall,
+                ),
+              ],
+            ),
+                        SizedBox(height: 4,),
+
+          ],
+        ),
+        subtitle: Column(
+          children: [
+            Text(
+              details,
+              style: Theme.of(context).textTheme.titleSmall,
+            ),
+          ],
+        ),
+        
+      ),
     );
   }
 }

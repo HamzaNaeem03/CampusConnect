@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:school_managment_app/screens/assignments.dart';
 import 'package:school_managment_app/screens/attendance.dart';
 import 'package:school_managment_app/screens/loginscreen.dart';
+import 'package:school_managment_app/screens/notification.dart';
 import 'package:school_managment_app/screens/profile.dart';
 import 'package:school_managment_app/screens/splashscreen.dart';
+import 'package:school_managment_app/screens/subject.dart';
 import 'package:school_managment_app/screens/timetable.dart';
 import 'package:school_managment_app/util/themes/theme.dart';
 
@@ -19,8 +21,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         theme: AppTheme.customTheme,
         title: 'CampusConnect',
-        // home: const ProfileScreen(),
-        initialRoute: "/Splash",
+        home: const ProfileScreen(),
+        // initialRoute: "/Splash",
         routes: {
           // "/": (context) => const login(),
           "/Splash": (context) => const SplashScreen(),
@@ -30,6 +32,10 @@ class MyApp extends StatelessWidget {
           "/TimeTable": (context) => const TimeTable(),
           "/Assignments": (context) => const Assignments(),
           "/Attendance": (context) => const Attendance(),
+                    "/notifications": (context) =>  notifications(),
+                    // "/subject": (context) =>  Subject(),
+
+          
         });
   }
 }

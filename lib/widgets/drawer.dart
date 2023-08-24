@@ -30,28 +30,31 @@ class MyDrawer extends StatelessWidget {
               )),
           SizedBox(height: 10),
           ListTile(
-            leading: Icon(Icons.person, color: colorCustom),
+          leading:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/man.png')),
             title: Center(
               child: Text(
                 "Profile",
                 style: Theme.of(context).textTheme.titleMedium,
               ),
             ),
-             onTap: (){
+            onTap: () {
               Navigator.pushNamed(context, "/Profile");
             },
           ),
           ListTile(
-            leading: Icon(Icons.assignment_sharp, color: colorCustom),
+          leading:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/clipboard.png')),
             title: Center(
               child: Text(
                 "Assignments",
                 style: Theme.of(context).textTheme.titleMedium,
               ),
             ),
+            onTap: () {
+              Navigator.pushNamed(context, "/Assignments");
+            },
           ),
           ListTile(
-            leading: Icon(Icons.calendar_view_month, color: colorCustom),
+          leading:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/day.png')),
             title: Center(
               child: Text(
                 "Attendance",
@@ -60,19 +63,20 @@ class MyDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.calendar_today, color: colorCustom),
+          leading:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/schedule.png')),
             title: Center(
               child: Text(
                 "Timetable",
                 style: Theme.of(context).textTheme.titleMedium,
               ),
-            ), onTap: (){
+            ),
+            onTap: () {
               Navigator.pushNamed(context, "/TimeTable");
             },
           ),
           ListTile(
-            leading: Icon(IconData(0xe559, fontFamily: 'MaterialIcons'),
-                color: colorCustom),
+                      leading:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/book-stack.png')),
+
             title: Center(
               child: Text(
                 "Subjects",
@@ -81,7 +85,7 @@ class MyDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.payments_outlined, color: colorCustom),
+          leading:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/money.png')),
             title: Center(
               child: Text(
                 "Fees",
@@ -90,7 +94,7 @@ class MyDrawer extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.directions_bus_filled, color: colorCustom),
+          leading:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/school-bus.png')),
             title: Center(
               child: Text(
                 "Transport  Details",
@@ -102,7 +106,7 @@ class MyDrawer extends StatelessWidget {
           SizedBox(height: 10),
           InkWell(
             child: ListTile(
-              leading: Icon(Icons.logout, color: colorCustom),
+          leading:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/logout.png')),
               title: Center(
                 child: Text(
                   "Log out",
@@ -118,4 +122,26 @@ class MyDrawer extends StatelessWidget {
       ),
     );
   }
+
+  // Widget _draweritem(
+  //   BuildContext context,
+  //   Image icon,
+  //   String itemname,
+  //   String route,
+  // ) {
+  //   return  
+  //       ListTile(
+  //       leading: SizedBox(width: 24, height: 24, child: icon),
+  //     title: Center(
+  //       child: Text(
+  //         itemname,
+  //         style: Theme.of(context).textTheme.titleMedium,
+  //       ),
+  //     ),
+  //     onTap: () {
+  //       Navigator.pushNamed(context, route);
+  //     },
+   
+  //   );
+  // }
 }

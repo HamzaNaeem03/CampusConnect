@@ -44,19 +44,24 @@ class _TimeTableState extends State<TimeTable> {
           child: SingleChildScrollView(
             child: Column(
               children: [
-
                 Column(
                   children: [
                     Text(
                       "Monday",
                       style: Theme.of(context).textTheme.displaySmall,
                     ),
+                    _buildSubjectCard(Image.asset('lib/assets/icons/eng.png'),
+                        'English', '9:00 - 10:00', 1),
                     _buildSubjectCard(
-                        Icon(Icons.abc), 'English', '9:00 - 10:00', 1),
-                    _buildSubjectCard(Icon(Icons.color_lens_outlined), 'Art',
-                        '10:00 - 11:00', 1),
-                    _buildSubjectCard(Icon(Icons.desktop_windows), 'Computer',
-                        '11:00 - 12:00', 1),
+                        Image.asset('lib/assets/icons/paint-palette.png'),
+                        'Art',
+                        '10:00 - 11:00',
+                        1),
+                    _buildSubjectCard(
+                        Image.asset('lib/assets/icons/computer.png'),
+                        'Computer',
+                        '11:00 - 12:00',
+                        1),
                     SizedBox(
                       height: 10,
                     ),
@@ -64,12 +69,18 @@ class _TimeTableState extends State<TimeTable> {
                       "Tuesday",
                       style: Theme.of(context).textTheme.displaySmall,
                     ),
+                    _buildSubjectCard(Image.asset('lib/assets/icons/eng.png'),
+                        'English', '9:00 - 10:00', 1),
                     _buildSubjectCard(
-                        Icon(Icons.abc), 'English', '9:00 - 10:00', 1),
-                    _buildSubjectCard(Icon(Icons.color_lens_outlined), 'Art',
-                        '10:00 - 11:00', 1),
-                    _buildSubjectCard(Icon(Icons.desktop_windows), 'Computer',
-                        '11:00 - 12:00', 1),
+                        Image.asset('lib/assets/icons/paint-palette.png'),
+                        'Art',
+                        '10:00 - 11:00',
+                        1),
+                    _buildSubjectCard(
+                        Image.asset('lib/assets/icons/computer.png'),
+                        'Computer',
+                        '11:00 - 12:00',
+                        1),
                     SizedBox(
                       height: 10,
                     ),
@@ -77,12 +88,18 @@ class _TimeTableState extends State<TimeTable> {
                       "Wednesday",
                       style: Theme.of(context).textTheme.displaySmall,
                     ),
+                    _buildSubjectCard(Image.asset('lib/assets/icons/eng.png'),
+                        'English', '9:00 - 10:00', 1),
                     _buildSubjectCard(
-                        Icon(Icons.abc), 'English', '9:00 - 10:00', 1),
-                    _buildSubjectCard(Icon(Icons.color_lens_outlined), 'Art',
-                        '10:00 - 11:00', 1),
-                    _buildSubjectCard(Icon(Icons.desktop_windows), 'Computer',
-                        '11:00 - 12:00', 1),
+                        Image.asset('lib/assets/icons/paint-palette.png'),
+                        'Art',
+                        '10:00 - 11:00',
+                        1),
+                    _buildSubjectCard(
+                        Image.asset('lib/assets/icons/computer.png'),
+                        'Computer',
+                        '11:00 - 12:00',
+                        1),
                     SizedBox(
                       height: 10,
                     ),
@@ -90,12 +107,18 @@ class _TimeTableState extends State<TimeTable> {
                       "Thursday",
                       style: Theme.of(context).textTheme.displaySmall,
                     ),
+                    _buildSubjectCard(Image.asset('lib/assets/icons/eng.png'),
+                        'English', '9:00 - 10:00', 1),
                     _buildSubjectCard(
-                        Icon(Icons.abc), 'English', '9:00 - 10:00', 1),
-                    _buildSubjectCard(Icon(Icons.color_lens_outlined), 'Art',
-                        '10:00 - 11:00', 1),
-                    _buildSubjectCard(Icon(Icons.desktop_windows), 'Computer',
-                        '11:00 - 12:00', 1),
+                        Image.asset('lib/assets/icons/paint-palette.png'),
+                        'Art',
+                        '10:00 - 11:00',
+                        1),
+                    _buildSubjectCard(
+                        Image.asset('lib/assets/icons/computer.png'),
+                        'Computer',
+                        '11:00 - 12:00',
+                        1),
                     SizedBox(
                       height: 10,
                     ),
@@ -103,12 +126,18 @@ class _TimeTableState extends State<TimeTable> {
                       "Friday",
                       style: Theme.of(context).textTheme.displaySmall,
                     ),
+                    _buildSubjectCard(Image.asset('lib/assets/icons/eng.png'),
+                        'English', '9:00 - 10:00', 1),
                     _buildSubjectCard(
-                        Icon(Icons.abc), 'English', '9:00 - 10:00', 1),
-                    _buildSubjectCard(Icon(Icons.color_lens_outlined), 'Art',
-                        '10:00 - 11:00', 1),
-                    _buildSubjectCard(Icon(Icons.desktop_windows), 'Computer',
-                        '11:00 - 12:00', 1),
+                        Image.asset('lib/assets/icons/paint-palette.png'),
+                        'Art',
+                        '10:00 - 11:00',
+                        1),
+                    _buildSubjectCard(
+                        Image.asset('lib/assets/icons/computer.png'),
+                        'Computer',
+                        '11:00 - 12:00',
+                        1),
                   ],
                 ),
               ],
@@ -118,18 +147,18 @@ class _TimeTableState extends State<TimeTable> {
   }
 
   Widget _buildSubjectCard(
-    Icon icon,
+    Image icon,
     String subject,
     String time,
     int roomNo,
   ) {
     return Card(
-      elevation: 3,
+      elevation: 4,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(5),
+        borderRadius: BorderRadius.circular(8),
       ),
       child: ListTile(
-        leading: (icon),
+        leading: SizedBox(width: 36, height: 36, child: icon),
         title: Text(
           subject,
           style: Theme.of(context).textTheme.titleLarge,

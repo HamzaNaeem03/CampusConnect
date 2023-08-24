@@ -17,7 +17,7 @@ class LoginScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
-                child: Image.asset('lib/assets/images/campusconnectLOGO.png'),
+                child: Image.asset('lib/assets/images/ccLogoNoBG.png'),
               ),
               TextFormField(
                 decoration: const InputDecoration(

@@ -32,19 +32,22 @@ class _BottomNavBarState extends State<BottomNavBar> {
       items: [
         
         BottomNavigationBarItem(
-          icon: Icon(Icons.person, color: colorCustom),
+          icon:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/man.png')),
+
           label: 'Profile',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.assignment_sharp, color: colorCustom),
+          icon:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/clipboard.png')),
           label: 'Assignments',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.calendar_view_month, color: colorCustom),
+                    icon:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/day.png')),
+
           label: 'Attendance',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.calendar_today, color: colorCustom),
+                    icon:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/schedule.png')),
+
           label: 'Timetable',
         ),
       ],
@@ -69,5 +72,6 @@ class _BottomNavBarState extends State<BottomNavBar> {
 // Navigator.pushNamed(context, "/TimeTable");}
       },
     );
+    
   }
 }
