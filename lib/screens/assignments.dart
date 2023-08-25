@@ -28,15 +28,14 @@ class _AssignmentsState extends State<Assignments> {
               Icons.notifications_sharp,
             ),
             onPressed: () {
-              Navigator.pushNamed(context, "/notifications");
+                    Navigator.pushNamed(context, '/notifications');
+
 
             },
           )
         ],
       ),
       drawer: MyDrawer(
-        accountName: 'hamza',
-        accountEmail: 'hamza04032003',
       ),
       bottomNavigationBar: BottomNavBar(),
       body: SingleChildScrollView(

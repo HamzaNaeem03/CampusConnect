@@ -28,14 +28,13 @@ class _TimeTableState extends State<TimeTable> {
               Icons.notifications_sharp,
             ),
             onPressed: () {
-              // do something
+                   Navigator.pushNamed(context, '/notifications');
+
             },
           )
         ],
       ),
       drawer: MyDrawer(
-        accountName: 'hamza',
-        accountEmail: 'hamza04032003',
       ),
       bottomNavigationBar: BottomNavBar(),
       body: Container(

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "666378179002",
+    "project_id": "campusconnect-c379f",
+    "storage_bucket": "campusconnect-c379f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666378179002:android:8c508da81836cf52618d83",
+        "android_client_info": {
+          "package_name": "com.example.school_managment_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666378179002-v6ahfb4ggp37ka58tcpq7ihko5hb87p5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCriLnaFBxD2rh-lZ-yjOPBmny12XEocqk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666378179002-v6ahfb4ggp37ka58tcpq7ihko5hb87p5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "666378179002-0pinb1c4bobgmp0b41ugs8vmb6ogi9qc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.schoolManagmentApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

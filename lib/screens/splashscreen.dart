@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:school_managment_app/screens/loginscreen.dart';
 import 'package:school_managment_app/util/themes/custommaterialcolor.dart';
 
+
 class SplashScreen extends StatelessWidget {
   static String routeName = 'SplashScreen';
 
@@ -11,6 +12,7 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Future.delayed(const Duration(seconds: 3), () {
+     
       Navigator.pushNamed(context, "/Login");
     });
     return Scaffold(

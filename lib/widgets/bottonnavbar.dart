@@ -17,7 +17,6 @@ class _BottomNavBarState extends State<BottomNavBar> {
   List<Widget> tabBar = [
     const ProfileScreen(),
     const Assignments(),
-    const Attendance(),
      const TimeTable(),
   ];
   
@@ -29,6 +28,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
       currentIndex: _currentIndex,
       iconSize: 26,
       selectedIconTheme: Theme.of(context).iconTheme,
+      unselectedItemColor: colorCustom,
+      selectedItemColor: colorCustom,
       items: [
         
         BottomNavigationBarItem(
@@ -40,34 +41,34 @@ class _BottomNavBarState extends State<BottomNavBar> {
           icon:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/clipboard.png')),
           label: 'Assignments',
         ),
-        BottomNavigationBarItem(
-                    icon:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/day.png')),
+        // BottomNavigationBarItem(
+        //             icon:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/day.png')),
 
-          label: 'Attendance',
-        ),
+        //   label: 'Attendance',
+        // ),
         BottomNavigationBarItem(
                     icon:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/schedule.png')),
 
           label: 'Timetable',
         ),
       ],
-      selectedItemColor: Color.fromRGBO(23, 63, 88, 1.0),
+      // selectedItemColor: Color.fromRGBO(23, 63, 88, 1.0),
       backgroundColor: Colors.transparent,
-      unselectedItemColor: colorCustom,
+      // unselectedItemColor: colorCustom,
       onTap: (Index) {
         setState(() {
-          _currentIndex = Index;
-        });
+          Index = _currentIndex;
+                });
         
-//         if (Index == 0) {
-//   Navigator.pushNamed(context, "/Profile");
-// } 
-// else if(Index == 1) {
-// Navigator.pushNamed(context, "/Assignments");
-// } 
-// else if(Index == 2) {
-// Navigator.pushNamed(context, "/Attendance");
-// } 
+        if (Index == 0) {
+  Navigator.pushNamed(context, "/Profile");
+} 
+else if(Index == 1) {
+Navigator.pushNamed(context, "/Assignments");
+} 
+else if(Index == 2) {
+Navigator.pushNamed(context, "/TimeTable");
+} 
 // else {
 // Navigator.pushNamed(context, "/TimeTable");}
       },

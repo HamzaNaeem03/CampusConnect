@@ -6,9 +6,7 @@ const IconData school = IconData(0xe559, fontFamily: 'MaterialIcons');
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer(
-      {super.key, required this.accountName, required this.accountEmail});
-  final String accountName;
-  final String accountEmail;
+      {super.key,});
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -17,16 +15,13 @@ class MyDrawer extends StatelessWidget {
           DrawerHeader(
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
-                currentAccountPicture: CircleAvatar(),
+                currentAccountPicture: CircleAvatar('lib/assets/images/campusconnectLOGO.png'),
                 accountName: Text(
-                  accountName,
+                  'campusConnect',
                   style: TextStyle(color: Colors.white),
                 ),
-                accountEmail: Text(
-                  accountEmail,
-                  style: TextStyle(color: Colors.white),
-                ),
-                onDetailsPressed: () {},
+                
+                onDetailsPressed: () {}, accountEmail: null,
               )),
           SizedBox(height: 10),
           ListTile(
@@ -53,15 +48,15 @@ class MyDrawer extends StatelessWidget {
               Navigator.pushNamed(context, "/Assignments");
             },
           ),
-          ListTile(
-          leading:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/day.png')),
-            title: Center(
-              child: Text(
-                "Attendance",
-                style: Theme.of(context).textTheme.titleMedium,
-              ),
-            ),
-          ),
+          // ListTile(
+          // leading:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/day.png')),
+          //   title: Center(
+          //     child: Text(
+          //       "Attendance",
+          //       style: Theme.of(context).textTheme.titleMedium,
+          //     ),
+          //   ),
+          // ),
           ListTile(
           leading:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/schedule.png')),
             title: Center(
@@ -74,34 +69,34 @@ class MyDrawer extends StatelessWidget {
               Navigator.pushNamed(context, "/TimeTable");
             },
           ),
-          ListTile(
-                      leading:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/book-stack.png')),
+          // ListTile(
+          //             leading:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/book-stack.png')),
 
-            title: Center(
-              child: Text(
-                "Subjects",
-                style: Theme.of(context).textTheme.titleMedium,
-              ),
-            ),
-          ),
-          ListTile(
-          leading:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/money.png')),
-            title: Center(
-              child: Text(
-                "Fees",
-                style: Theme.of(context).textTheme.titleMedium,
-              ),
-            ),
-          ),
-          ListTile(
-          leading:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/school-bus.png')),
-            title: Center(
-              child: Text(
-                "Transport  Details",
-                style: Theme.of(context).textTheme.titleMedium,
-              ),
-            ),
-          ),
+          //   title: Center(
+          //     child: Text(
+          //       "Subjects",
+          //       style: Theme.of(context).textTheme.titleMedium,
+          //     ),
+          //   ),
+          // ),
+          // ListTile(
+          // leading:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/money.png')),
+          //   title: Center(
+          //     child: Text(
+          //       "Fees",
+          //       style: Theme.of(context).textTheme.titleMedium,
+          //     ),
+          //   ),
+          // ),
+          // ListTile(
+          // leading:SizedBox( width: 24, height: 24 ,child: Image.asset('lib/assets/icons/school-bus.png')),
+          //   title: Center(
+          //     child: Text(
+          //       "Transport  Details",
+          //       style: Theme.of(context).textTheme.titleMedium,
+          //     ),
+          //   ),
+          // ),
           Divider(),
           SizedBox(height: 10),
           InkWell(

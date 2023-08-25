@@ -8,12 +8,19 @@ import 'package:school_managment_app/screens/splashscreen.dart';
 import 'package:school_managment_app/screens/subject.dart';
 import 'package:school_managment_app/screens/timetable.dart';
 import 'package:school_managment_app/util/themes/theme.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+import 'auth.dart';
+import 'firebase_options.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  
   const MyApp({super.key});
 
   @override
@@ -21,8 +28,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         theme: AppTheme.customTheme,
         title: 'CampusConnect',
-        home: const ProfileScreen(),
-        // initialRoute: "/Splash",
+        // home:  LoginScreen(),
+        initialRoute: "/Splash",
         routes: {
           // "/": (context) => const login(),
           "/Splash": (context) => const SplashScreen(),
@@ -32,10 +39,8 @@ class MyApp extends StatelessWidget {
           "/TimeTable": (context) => const TimeTable(),
           "/Assignments": (context) => const Assignments(),
           "/Attendance": (context) => const Attendance(),
-                    "/notifications": (context) =>  notifications(),
-                    // "/subject": (context) =>  Subject(),
-
-          
+          "/notifications": (context) => NotificationScreen(),
+          // "/subject": (context) =>  Subject(),
         });
   }
 }

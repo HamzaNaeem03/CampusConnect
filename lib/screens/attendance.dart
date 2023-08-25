@@ -34,8 +34,6 @@ class _AttendanceState extends State<Attendance> {
         ],
       ),
       drawer: MyDrawer(
-        accountName: 'hamza',
-        accountEmail: 'hamza04032003',
       ),
       bottomNavigationBar: BottomNavBar(),
     );
