@@ -1,0 +1,166 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.campus_connect"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->[:file_picker] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-80
+11-->[:file_picker] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-77
+12
+13    <queries>
+13-->[:file_picker] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-17:15
+14        <intent>
+14-->[:file_picker] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-16:18
+15            <action android:name="android.intent.action.GET_CONTENT" />
+15-->[:file_picker] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-72
+15-->[:file_picker] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:13:21-69
+16
+17            <data android:mimeType="*/*" />
+17-->[:file_picker] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-44
+17-->[:file_picker] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:15:19-41
+18        </intent>
+19    </queries>
+20
+21    <permission
+21-->[androidx.core:core:1.10.1] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\9c9ab1a476c120097a79d748cec7161f\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+22        android:name="com.example.campus_connect.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+22-->[androidx.core:core:1.10.1] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\9c9ab1a476c120097a79d748cec7161f\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+23        android:protectionLevel="signature" />
+23-->[androidx.core:core:1.10.1] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\9c9ab1a476c120097a79d748cec7161f\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+24
+25    <uses-permission android:name="com.example.campus_connect.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+25-->[androidx.core:core:1.10.1] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\9c9ab1a476c120097a79d748cec7161f\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+25-->[androidx.core:core:1.10.1] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\9c9ab1a476c120097a79d748cec7161f\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+26
+27    <application
+28        android:name="android.app.Application"
+28-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:5:9-42
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.10.1] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\9c9ab1a476c120097a79d748cec7161f\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+30        android:icon="@mipmap/ic_launcher"
+30-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:6:9-43
+31        android:label="campus_connect" >
+31-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:4:9-39
+32        <activity
+32-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:7:9-27:20
+33            android:name="com.example.campus_connect.MainActivity"
+33-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:8:13-41
+34            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+34-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:12:13-163
+35            android:exported="true"
+35-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:9:13-36
+36            android:hardwareAccelerated="true"
+36-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:13:13-47
+37            android:launchMode="singleTop"
+37-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:10:13-43
+38            android:theme="@style/LaunchTheme"
+38-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:11:13-47
+39            android:windowSoftInputMode="adjustResize" >
+39-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:14:13-55
+40
+41            <!--
+42                 Specifies an Android theme to apply to this Activity as soon as
+43                 the Android process has started. This theme is visible to the user
+44                 while the Flutter UI initializes. After that, this theme continues
+45                 to determine the Window background behind the Flutter UI.
+46            -->
+47            <meta-data
+47-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:19:13-22:17
+48                android:name="io.flutter.embedding.android.NormalTheme"
+48-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:20:15-70
+49                android:resource="@style/NormalTheme" />
+49-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:21:15-52
+50
+51            <intent-filter>
+51-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:23:13-26:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:24:17-68
+52-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:24:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:25:17-76
+54-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:25:27-74
+55            </intent-filter>
+56        </activity>
+57        <!--
+58             Don't delete the meta-data below.
+59             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+60        -->
+61        <meta-data
+61-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:30:9-32:33
+62            android:name="flutterEmbedding"
+62-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:31:13-44
+63            android:value="2" />
+63-->E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\android\app\src\main\AndroidManifest.xml:32:13-30
+64
+65        <provider
+65-->[:open_file] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\open_file\intermediates\merged_manifest\release\AndroidManifest.xml:11:9-20:20
+66            android:name="com.crazecoder.openfile.FileProvider"
+66-->[:open_file] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\open_file\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-64
+67            android:authorities="com.example.campus_connect.fileProvider.com.crazecoder.openfile"
+67-->[:open_file] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\open_file\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-88
+68            android:exported="false"
+68-->[:open_file] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\open_file\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-37
+69            android:grantUriPermissions="true" >
+69-->[:open_file] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\open_file\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-47
+70            <meta-data
+70-->[:open_file] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\open_file\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-19:53
+71                android:name="android.support.FILE_PROVIDER_PATHS"
+71-->[:open_file] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\open_file\intermediates\merged_manifest\release\AndroidManifest.xml:18:17-67
+72                android:resource="@xml/filepaths" />
+72-->[:open_file] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\open_file\intermediates\merged_manifest\release\AndroidManifest.xml:19:17-50
+73        </provider>
+74
+75        <activity
+75-->[:url_launcher_android] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-13:74
+76            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+76-->[:url_launcher_android] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
+77            android:exported="false"
+77-->[:url_launcher_android] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
+78            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+78-->[:url_launcher_android] E:\DartFlutter CourseFiles\PracticeFilesForFlutter\campus_connect\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-71
+79
+80        <uses-library
+80-->[androidx.window:window:1.0.0-beta04] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+81            android:name="androidx.window.extensions"
+81-->[androidx.window:window:1.0.0-beta04] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+82            android:required="false" />
+82-->[androidx.window:window:1.0.0-beta04] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+83        <uses-library
+83-->[androidx.window:window:1.0.0-beta04] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+84            android:name="androidx.window.sidecar"
+84-->[androidx.window:window:1.0.0-beta04] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+85            android:required="false" />
+85-->[androidx.window:window:1.0.0-beta04] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\dee59bb480020f42d53c2ea15e4501f7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+86
+87        <provider
+87-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\f3da131123e9b4eccc244f6ad91f009f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+88            android:name="androidx.startup.InitializationProvider"
+88-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\f3da131123e9b4eccc244f6ad91f009f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+89            android:authorities="com.example.campus_connect.androidx-startup"
+89-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\f3da131123e9b4eccc244f6ad91f009f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+90            android:exported="false" >
+90-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\f3da131123e9b4eccc244f6ad91f009f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+91            <meta-data
+91-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\f3da131123e9b4eccc244f6ad91f009f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+92                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+92-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\f3da131123e9b4eccc244f6ad91f009f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+93                android:value="androidx.startup" />
+93-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\f3da131123e9b4eccc244f6ad91f009f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+94            <meta-data
+94-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\bfb294eadd9142ad90bb62295accd8ec\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+95                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+95-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\bfb294eadd9142ad90bb62295accd8ec\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+96                android:value="androidx.startup" />
+96-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Hamza Naeem\.gradle\caches\transforms-3\bfb294eadd9142ad90bb62295accd8ec\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+97        </provider>
+98    </application>
+99
+100</manifest>
